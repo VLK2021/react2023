@@ -1,11 +1,12 @@
-import './App.css';
-
-function App() {
-  return (
-    <div>
-      APP
-    </div>
-  );
+const App = () => {
+    return (
+        <div>
+            app
+        </div>
+    );
 }
 
-export default App;
+export {App};
+
+
+
