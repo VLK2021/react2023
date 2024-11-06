@@ -1,11 +1,15 @@
-import './App.css';
+import A from "./components/A";
 
-function App() {
-  return (
-    <div>
-      APP
-    </div>
-  );
+
+const App = () => {
+    return (
+        <div>
+            <A/>
+        </div>
+    );
 }
 
-export default App;
+export {App};
+
+
+
