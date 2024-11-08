@@ -10,17 +10,18 @@ const LoginForm = () => {
     const [serverError, setServerError] = useState(null)
     const {register, handleSubmit} = useForm();
     const navigate = useNavigate();
-    const {setIsAuth, setMe} = useAppContext();
+    const {setIsAuth, setMe, setTime} = useAppContext();
 
 
     const login = async (user) => {
         try {
             await authService.login(user);
-            // const {data} = await authService.me();
-            // setMe(data)
+            const {data} = await authService.me();
+            setMe(data)
+            setTime(new Date().getDate())
             setServerError(null)
             navigate('/cars')
-            // setIsAuth(true)
+            setIsAuth(true)
         } catch (e) {
             setServerError(e.response.data)
         }

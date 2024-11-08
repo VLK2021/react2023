@@ -4,7 +4,7 @@ import React, {createContext, useState} from 'react';
 const Context = createContext(null);
 
 const ContextProvider = ({children}) => {
-    const state = useState({isAuth: false, me: null});
+    const state = useState({isAuth: false, me: null, time: null});
 
 
     return (
