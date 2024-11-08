@@ -13,6 +13,7 @@ const router = createBrowserRouter([
                     {path: 'register', element: <RegisterPage/>}
                 ]
             },
+
             {
                 element: <AuthLayout/>, children: [
                     {path: 'cars', element: <CarsPage/>}
