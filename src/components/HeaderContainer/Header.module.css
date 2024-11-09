@@ -1,0 +1,39 @@
+.header {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+    color: snow;
+}
+
+.logo, .sigIn {
+    width: 15%;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: snow;
+    font-size: 2rem;
+}
+
+.menu {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: snow;
+}
+
+.menu a {
+    color: snow;
+    text-decoration: none;
+}
+
+.menu a[class='active'] {
+    color: red;
+    text-decoration: underline;
+}
+
+.sigIn {
+    font-size: 1.3rem;
+}
