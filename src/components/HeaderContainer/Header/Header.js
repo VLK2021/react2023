@@ -10,7 +10,7 @@ const Header = () => {
             <div className={css.logo}>logo</div>
 
             <div className={css.menu}>
-                <NavLink to={'/'}>home</NavLink>
+                <NavLink to={'/home'}>home</NavLink>
                 <NavLink to={'/users'}>users</NavLink>
                 <NavLink to={'/posts'}>posts</NavLink>
             </div>

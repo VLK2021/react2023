@@ -2,7 +2,7 @@ import React from 'react';
 
 import css from './MaineLayout.module.css';
 import {Outlet} from "react-router-dom";
-import {Header} from "../../components/HeaderContainer/Header";
+import {Header} from "../../components/HeaderContainer/Header/Header";
 
 
 const MaineLayout = () => {

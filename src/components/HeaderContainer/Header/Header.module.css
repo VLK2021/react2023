@@ -6,6 +6,7 @@
     align-items: center;
     background-color: blue;
     color: snow;
+    box-sizing: border-box;
 }
 
 .logo, .sigIn {
