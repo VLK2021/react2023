@@ -1,40 +1,35 @@
-.header {
+.wrap {
     width: 100%;
-    padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: blue;
-    color: snow;
-    box-sizing: border-box;
+    padding: 1rem;
+    background-color: black;
 }
 
-.logo, .sigIn {
+.logo, .signIn {
     width: 15%;
+    font-size: 1.1rem;
+    color: snow;
     font-weight: bold;
     text-transform: uppercase;
-    color: snow;
-    font-size: 2rem;
 }
 
 .menu {
     width: 70%;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    color: snow;
+    justify-content: space-around;
+    font-size: 1.2rem;
 }
 
-.menu a {
-    color: snow;
+.menu a{
     text-decoration: none;
+    color: snow;
 }
 
-.menu a[class='active'] {
+.menu a[class='active']{
     color: red;
     text-decoration: underline;
-}
-
-.sigIn {
-    font-size: 1.3rem;
+    font-style: italic;
 }

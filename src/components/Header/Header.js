@@ -6,8 +6,10 @@ import {NavLink} from "react-router-dom";
 
 const Header = () => {
     return (
-        <div className={css.header}>
-            <div className={css.logo}>logo</div>
+        <div className={css.wrap}>
+            <div className={css.logo}>
+                logo
+            </div>
 
             <div className={css.menu}>
                 <NavLink to={'/home'}>home</NavLink>
@@ -15,11 +17,11 @@ const Header = () => {
                 <NavLink to={'/posts'}>posts</NavLink>
             </div>
 
-            <div className={css.sigIn}>signIn/logIn</div>
+            <div className={css.signIn}>
+                signIn/signOut
+            </div>
         </div>
     );
 };
 
-export {
-    Header
-};
+export {Header};

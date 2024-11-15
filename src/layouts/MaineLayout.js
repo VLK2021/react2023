@@ -1,15 +1,17 @@
 import React from 'react';
 import {Outlet} from "react-router-dom";
 
-import css from './PublicLayout.module.css';
+import {Header} from "../components";
 
 
-const PublicLayout = () => {
+const MaineLayout = () => {
     return (
-        <div className={css.wrap}>
+        <div>
+            <Header/>
+
             <Outlet/>
         </div>
     );
 };
 
-export {PublicLayout};
+export {MaineLayout};

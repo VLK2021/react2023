@@ -1,7 +1,6 @@
 import {createBrowserRouter, Navigate} from "react-router-dom";
-
 import {MaineLayout, PublicLayout} from "./layouts";
-import HomePageContainer from "./pages/HomePageContainer/HomePageContainer";
+import {Home, Posts, Users} from "./components";
 
 
 const router = createBrowserRouter([
@@ -9,11 +8,11 @@ const router = createBrowserRouter([
             {index: true, element: <Navigate to={'/home'}/>},
             {
                 element: <PublicLayout/>, children: [
-                    {path: '/home', element: <HomePageContainer/>}
-
+                    {path: '/home', element: <Home/>},
+                    {path: '/users', element: <Users/>},
+                    {path: '/posts', element: <Posts/>},
                 ]
             }
-
         ]}
 ]);
 
