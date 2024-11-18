@@ -17,11 +17,11 @@ const Header = () => {
 
 
     return (
-        <div>
+        <div className={css.Header}>
             {
-                me ? <div className={css.Header}>{me.username} -- {new Date(me.last_login).toDateString()}</div>
+                me ? <div>{me.username} -- {new Date(me.last_login).toDateString()}</div>
                     :
-                    <div className={css.Header}>
+                    <div>
                         <Link to={'/login'}>Login</Link>
                         <Link to={'/register'}>Register</Link>
                     </div>
