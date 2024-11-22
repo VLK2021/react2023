@@ -48,6 +48,7 @@ const Car = ({car}) => {
                 disabled={!!photo || !!image}
                 onChange={addPhoto}
             />
+            <hr/>
         </div>
     );
 };
