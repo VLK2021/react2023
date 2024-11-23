@@ -1,0 +1,106 @@
+.wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.objectBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.objectBlockObject {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: red;
+    border: 1px solid black;
+}
+
+.functionalBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.functionalBlockAll {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.functionalBlockAll button {
+    width: 20%;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.functionalBlockAll button:hover {
+    font-style: italic;
+    opacity: 50%;
+    transform: scale(1.1, 1.1);
+}
+
+.functionalBlockFirst, .functionalBlockSecond {
+    width: 50%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    min-height: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.2rem
+}
+
+.functionalBlockFirst > p, .functionalBlockSecond > p {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.functionalBlockFirst {
+    border-right: 3px solid grey;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.pink {
+    background-color: pink;
+}
