@@ -1,31 +1,32 @@
 import React from 'react';
-
-import css from './BackgroundChanges.module.css';
 import clsx from "clsx";
 
+import css from './BackgroundChanges.module.css';
+import {UseAppContext} from "../../hooks";
 
-const BackgroundChanges = (props) => {
-    const {setChangeBackground} = props;
+
+const BackgroundChanges = () => {
+    const {setBackground} = UseAppContext();
 
     const changeBackgroundColor = (currentColorBackground) => {
         switch (currentColorBackground) {
             case 'red':
-                setChangeBackground('red');
+                setBackground('red');
                 break;
             case 'blue':
-                setChangeBackground('blue');
+                setBackground('blue');
                 break;
             case 'green':
-                setChangeBackground('green');
+                setBackground('green');
                 break;
             case 'pink':
-                setChangeBackground('pink');
+                setBackground('pink');
                 break;
             case 'yellow':
-                setChangeBackground('yellow');
+                setBackground('yellow');
                 break;
             case 'orange':
-                setChangeBackground('orange');
+                setBackground('orange');
                 break;
         }
     }

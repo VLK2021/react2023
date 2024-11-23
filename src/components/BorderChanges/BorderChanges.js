@@ -2,34 +2,34 @@ import React from 'react';
 import clsx from "clsx";
 
 import css from './BorderChanges.module.css';
+import {UseAppContext} from "../../hooks";
 
 
-const BorderChanges = (props) => {
-    const {setChangeBorder} = props;
+const BorderChanges = () => {
+const {setBorder} = UseAppContext();
 
     const changeBorderColor = (currentColorBackground) => {
         switch (currentColorBackground) {
             case 'red':
-                setChangeBorder('red');
+                setBorder('red');
                 break;
             case 'blue':
-                setChangeBorder('blue');
+                setBorder('blue');
                 break;
             case 'green':
-                setChangeBorder('green');
+                setBorder('green');
                 break;
             case 'pink':
-                setChangeBorder('pink');
+                setBorder('pink');
                 break;
             case 'yellow':
-                setChangeBorder('yellow');
+                setBorder('yellow');
                 break;
             case 'orange':
-                setChangeBorder('orange');
+                setBorder('orange');
                 break;
         }
     }
-
 
     const changeBorderFunction = (e) => {
         const currentColorBorder = e.target.textContent;

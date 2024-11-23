@@ -4,11 +4,11 @@ import clsx from "clsx";
 import css from './Maine.module.css';
 import {BackgroundChanges} from "../BackgroundChanges/BackgroundChanges";
 import {BorderChanges} from "../BorderChanges/BorderChanges";
+import {UseAppContext} from "../../hooks";
 
 
 const Maine = () => {
-    const [changeBackground, setChangeBackground] = useState('grey');
-    const [changeBorder, setChangeBorder] = useState('black');
+    const {currentBackground, currentBorderColor} = UseAppContext();
 
 
     return (
@@ -17,8 +17,8 @@ const Maine = () => {
                 <h1>object for experiments</h1>
 
                 <div className={css.objectBlockObject} style={{
-                    backgroundColor: changeBackground,
-                    border: `3px solid ${changeBorder}`
+                    backgroundColor: currentBackground,
+                    border: `3px solid ${currentBorderColor}`
                 }}></div>
             </div>
 
@@ -28,11 +28,11 @@ const Maine = () => {
 
                 <div className={clsx(`${css.functionalBlockAll}`)}>
                     <div className={clsx(`${css.functionalBlockFirst}`)}>
-                        <BackgroundChanges setChangeBackground={setChangeBackground}/>
+                        <BackgroundChanges/>
                     </div>
 
                     <div className={clsx(`${css.functionalBlockSecond}`)}>
-                        <BorderChanges setChangeBorder={setChangeBorder}/>
+                        <BorderChanges/>
                     </div>
                 </div>
 
