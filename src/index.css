@@ -3,3 +3,27 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.orange {
+    background-color: orange;
+}

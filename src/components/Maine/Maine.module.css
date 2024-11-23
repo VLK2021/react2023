@@ -75,7 +75,7 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 0.2rem
+    gap: 0.5rem
 }
 
 .functionalBlockFirst > p, .functionalBlockSecond > p {
@@ -103,4 +103,12 @@ h1 {
 
 .pink {
     background-color: pink;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.orange {
+    background-color: orange;
 }
