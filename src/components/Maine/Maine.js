@@ -1,14 +1,21 @@
-import React, {useState} from 'react';
+import React from 'react';
 import clsx from "clsx";
 
 import css from './Maine.module.css';
 import {BackgroundChanges} from "../BackgroundChanges/BackgroundChanges";
 import {BorderChanges} from "../BorderChanges/BorderChanges";
 import {UseAppContext} from "../../hooks";
+import {WidthChanges} from "../WidthChanges/WidthChanges";
+import {HeightChanges} from "../HeightChanges/HeightChanges";
 
 
 const Maine = () => {
-    const {currentBackground, currentBorderColor} = UseAppContext();
+    const {
+        currentBackground,
+        currentBorderColor,
+        currentWidth,
+        currentHeight
+    } = UseAppContext();
 
 
     return (
@@ -18,7 +25,9 @@ const Maine = () => {
 
                 <div className={css.objectBlockObject} style={{
                     backgroundColor: currentBackground,
-                    border: `3px solid ${currentBorderColor}`
+                    border: `3px solid ${currentBorderColor}`,
+                    width: currentWidth,
+                    height: currentHeight
                 }}></div>
             </div>
 
@@ -34,6 +43,19 @@ const Maine = () => {
                     <div className={clsx(`${css.functionalBlockSecond}`)}>
                         <BorderChanges/>
                     </div>
+                </div>
+
+                <div className={css.inputsBlock}>
+                    <div className={css.inputsBlockWidth}>
+                        <WidthChanges/>
+                    </div>
+                    <div className={css.inputsBlockHeight}>
+                        <HeightChanges/>
+                    </div>
+                    <div className={css.inputsBlockBorderRadius}>
+
+                    </div>
+
                 </div>
 
             </div>

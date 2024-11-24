@@ -8,7 +8,9 @@ const ContextProvider = ({children}) => {
     const state = useState(
         {
             currentBackground: 'grey',
-            currentBorderColor: 'black'
+            currentBorderColor: 'black',
+            currentWidth: '10rem',
+            currentHeight: '10rem'
         }
     );
 

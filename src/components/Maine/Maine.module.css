@@ -22,8 +22,8 @@ h1 {
 }
 
 .objectBlockObject {
-    width: 10rem;
-    height: 10rem;
+    /*width: 10rem;*/
+    /*height: 10rem;*/
     border-radius: 50%;
 }
 
@@ -39,6 +39,7 @@ h1 {
 .functionalBlockAll {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
@@ -65,48 +66,23 @@ h1 {
 }
 
 .functionalBlockFirst, .functionalBlockSecond {
-    width: 50%;
-    padding: 0.5rem;
-    box-sizing: border-box;
-    min-height: 5rem;
+    width: 49.7%;
+    border: 3px solid grey;
+}
+
+.inputsBlock {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 0.5rem
+    padding: 1rem;
+    margin-top: 2rem;
 }
 
-.functionalBlockFirst > p, .functionalBlockSecond > p {
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.5rem;
+.inputsBlockWidth, .inputsBlockHeight, .inputsBlockBorderRadius {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.functionalBlockFirst {
-    border-right: 3px solid grey;
-}
-
-.red {
-    background-color: red;
-}
-
-.blue {
-    background-color: blue;
-}
-
-.green {
-    background-color: green;
-}
-
-.pink {
-    background-color: pink;
-}
-
-.yellow{
-    background-color: yellow;
-}
-
-.orange {
-    background-color: orange;
-}
