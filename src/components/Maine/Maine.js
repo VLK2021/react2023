@@ -55,7 +55,6 @@ const Maine = () => {
                     <div className={css.inputsBlockBorderRadius}>
 
                     </div>
-
                 </div>
 
             </div>
