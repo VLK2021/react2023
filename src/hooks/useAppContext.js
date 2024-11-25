@@ -7,6 +7,7 @@ const UseAppContext = () => {
     const [state, setState] = useContext(Context);
 
 
+
     return {
         currentBackground: state.currentBackground,
         setBackground: (value) => setState(prev => ({...prev, currentBackground: value})),
